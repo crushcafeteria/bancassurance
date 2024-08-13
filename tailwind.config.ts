@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         'earth': "#3C2420",
-        'banana': "#FFAF2E",
+        'banana': "#FFBA00",
+        'strawberry': "#F5F0F0",
+        'strawberry2': "#F9EBE9",
       }
     },
   },
