@@ -19,7 +19,7 @@ export default function Drawer({ open, setOpen, menu }: any) {
                     <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
                         <DialogPanel
                             transition
-                            className="pointer-events-auto w-screen max-w-[50vw] transform transition duration-300 ease-in-out data-[closed]:translate-x-full sm:duration-300"
+                            className="pointer-events-auto w-screen max-w-[70vw] transform transition duration-300 ease-in-out data-[closed]:translate-x-full sm:duration-300"
                         >
                             <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
                                 <div className="border-b block p-2 shadow-lg">
