@@ -66,7 +66,7 @@ export default function Home() {
                         Looking for motor, health, property or general cover? Enjoy quality product offerings with high standards of service from NBK Bancassurance Intermediary Limited.
                     </p>
 
-                    <div className="grid lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                         {personal.map((item) => (
                             <div className="w-full py-14 bg-center bg-cover aspect-auto space-y-6 text-white rounded-lg hover:shadow-lg" key={nanoid()} style={{
                                 backgroundImage: `url("${item.image}")`
@@ -87,7 +87,7 @@ export default function Home() {
                         NBK Bancassurance Intermediary Limited has partnered with major insurers to offer your organization the best risk management advisory and insurance services in Kenya.
                     </p>
                     <div className="container mx-auto">
-                        <div className="grid lg:grid-cols-4 gap-4">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                             {personal.map((item) => (
                                 <div className="w-full py-14 bg-center bg-cover aspect-auto space-y-6 text-white rounded-lg hover:shadow-lg" key={nanoid()} style={{
                                     backgroundImage: `url("${item.image}")`

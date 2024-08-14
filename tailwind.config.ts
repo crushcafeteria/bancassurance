@@ -7,6 +7,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      padding: '1rem',
+    },
     extend: {
       colors: {
         'earth': "#3C2420",
