@@ -8,7 +8,7 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 export default function Drawer({ open, setOpen, menu }: any) {
 
     return (
-        <Dialog open={open} onClose={setOpen} className="relative z-10">
+        <Dialog open={open} onClose={setOpen} className="relative z-50">
             <DialogBackdrop
                 transition
                 className="fixed inset-0 bg-black bg-opacity-75 transition-opacity duration-300 ease-in-out data-[closed]:opacity-0"
@@ -42,7 +42,7 @@ export default function Drawer({ open, setOpen, menu }: any) {
                                 </div>
                                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
                                     {menu.map((item: any) => (
-                                        <div className={`block border-l-4 border-transparent hover:border-l-banana p-4 -mt-0.5 cursor-pointer`} key={item.label}>
+                                        <div className={`block border-l-4 border-transparent hover:border-l-banana p-4 -mt-0.5 cursor-pointer hover:text-earth`} key={item.label}>
                                             <a
                                                 href={item.url}
                                                 className="text-xl"
