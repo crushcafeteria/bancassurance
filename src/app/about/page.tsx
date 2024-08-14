@@ -62,9 +62,9 @@ export default function About() {
                             </p>
                         </>
                     </div>
-                    <div className="lg:col-span-5 border bg-earth text-white p-6 space-y-5">
-                        <h1 className="text-xl font-bold">
-                            Interested in About Bancassurance or have a question?
+                    <div className="lg:col-span-5 border bg-earth text-white px-8 py-12 space-y-5">
+                        <h1 className="text-2xl font-bold">
+                            Interested in bancassurance or have a question?
                         </h1>
                         <div className="form-group">
                             <label htmlFor="">Full Name</label>
@@ -95,7 +95,8 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* values */}
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
                     <div className="bg-strawberry text-center p-6 space-y-3">
                         <img src="/mission.png" className="mx-auto" />
                         <h3 className="text-xl font-bold">Our Mission</h3>
