@@ -34,7 +34,7 @@ export default function Header() {
 
     return (<>
         <div className="container mx-auto fixed lg:relative top-0 bg-white z-30 border-b shadow-lg">
-            <div className="flex px-5 lg:px-0">
+            <div className="flex lg:px-0">
                 <a href="/" className="flex-auto flex items-center lg:py-3">
                     <img src="/logo.png" className="max-h-14 aspect-auto" />
                 </a>
