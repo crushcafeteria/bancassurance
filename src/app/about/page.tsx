@@ -22,7 +22,7 @@ export default function About() {
             <Header />
 
             {/* Hero */}
-            <div className="w-full bg-center bg-cover h-[65vh] aspect-auto bg-banana flex"
+            <div className="w-full bg-center bg-cover h-[65vh] aspect-auto bg-banana flex mt-20 lg:mt-0"
                 style={{
                     backgroundImage: `url("/Rectangle 7.png")`
                 }}>
