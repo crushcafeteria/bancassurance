@@ -1,6 +1,13 @@
+'use client'
+
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+import { faHamburger } from "@fortawesome/free-solid-svg-icons"
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
+import { useState } from "react"
+import Drawer from "./Drawer"
 
 const mainMenu = [
     {
@@ -22,13 +29,16 @@ const mainMenu = [
 ]
 
 export default function Header() {
-    return (
+
+    const [openDrawer, setOpenDrawer] = useState(true)
+
+    return (<>
         <div className="container mx-auto">
-            <div className="flex">
-                <div className="flex-auto flex items-center">
+            <div className="flex px-5 lg:px-0">
+                <div className="flex-auto flex items-center lg:py-3">
                     <img src="/logo.png" className="max-h-14 aspect-auto" />
                 </div>
-                <div className="flex-shrink space-x-10">
+                <div className="flex-shrink space-x-10 hidden lg:block">
                     {mainMenu.map((item, idx) => (
                         <div className={`items-center py-6 border-b-4 border-transparent inline-flex hover:border-banana`} key={item.label}>
                             <a
@@ -40,7 +50,14 @@ export default function Header() {
                         </div>
                     ))}
                 </div>
+
+                {/* Mobile Menu */}
+                <div className="flex-shrink space-x-10 block lg:hidden py-5 cursor-pointer" onClick={() => setOpenDrawer(!openDrawer)}>
+                    <FontAwesomeIcon icon={faBars} className="h-10 w-10 text-earth" />
+                </div>
             </div>
         </div>
+        <Drawer open={openDrawer} setOpen={setOpenDrawer} menu={mainMenu} />
+    </>
     )
 }

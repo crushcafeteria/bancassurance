@@ -28,7 +28,7 @@ const topBar = [
 export default function TopBar() {
     return (
         <>
-            <div className="bg-earth text-banana">
+            <div className="bg-earth text-banana hidden lg:block">
                 <div className="container mx-auto py-4">
                     <div className="flex space-x-4 justify-end">
                         {topBar.map((item, idx) => (

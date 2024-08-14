@@ -46,7 +46,7 @@ export default function Home() {
                     backgroundImage: `url("/Rectangle 7.png")`
                 }}>
                 <div className="container mx-auto flex">
-                    <div className="bg-earth mr-auto my-auto align-middle w-1/2 space-y-10 bg-opacity-80 relative py-14">
+                    <div className="bg-earth lg:mr-auto my-auto align-middle lg:w-1/2 space-y-10 bg-opacity-80 relative py-14">
                         <h1 className="text-3xl font-bold text-banana border-l-8 border-banana px-14">
                             NBK Bancassurance Intermediary Limited
                         </h1>

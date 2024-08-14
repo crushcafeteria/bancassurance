@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
-import { Inter, Roboto, Ropa_Sans } from "next/font/google";
+'use client';
+
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
 const font = Roboto({
@@ -7,18 +8,16 @@ const font = Roboto({
   weight: ["400", '700'],
 });
 
-export const metadata: Metadata = {
-  title: "NBK Bancassurance",
-  description: "Hello world",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en" className="h-full">
+      <title>NBK Bancassurance</title>
       <body className={`${font.className} h-full`}>
         {children}
       </body>
