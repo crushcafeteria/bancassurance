@@ -3,7 +3,7 @@
 import { Roboto, Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const font = Work_Sans({
+const font = Roboto({
   subsets: ["latin"],
   weight: ["400", '700'],
 });
