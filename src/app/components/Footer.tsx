@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
             <div className="block py-10 bg-banana">
                 <div className="container mx-auto">
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 mb-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-6">
                         <FooterMenu title="For You" menu={[
                             { label: 'Open an account', url: '#' },
                             { label: 'Get a loan', url: '#' },
@@ -42,7 +42,7 @@ export default function Footer() {
                             { label: 'Complaints', url: '#' },
                             { label: 'Service Charter', url: '#' },
                         ]} />
-                        <div className="block space-y-4">
+                        <div className="block space-y-4 col-span-1">
                             <h3 className="font-bold text-2xl block">Banking Hours</h3>
                             <div className="flex flex-col space-y-4">
                                 <div className="text-xl">Mon - Fri : 8am - 6pm</div>
