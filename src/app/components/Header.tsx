@@ -33,7 +33,7 @@ export default function Header() {
     const [openDrawer, setOpenDrawer] = useState(false)
 
     return (<>
-        <div className="container mx-auto">
+        <div className="container mx-auto fixed lg:relative top-0 bg-white z-50">
             <div className="flex px-5 lg:px-0">
                 <div className="flex-auto flex items-center lg:py-3">
                     <img src="/logo.png" className="max-h-14 aspect-auto" />
