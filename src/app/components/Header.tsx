@@ -12,11 +12,11 @@ import Drawer from "./Drawer"
 const mainMenu = [
     {
         label: 'Home',
-        url: '#',
+        url: '/',
     },
     {
         label: 'About Bancassurance',
-        url: '#',
+        url: '/about',
     },
     {
         label: 'Personal Solutions',
@@ -30,7 +30,7 @@ const mainMenu = [
 
 export default function Header() {
 
-    const [openDrawer, setOpenDrawer] = useState(true)
+    const [openDrawer, setOpenDrawer] = useState(false)
 
     return (<>
         <div className="container mx-auto">

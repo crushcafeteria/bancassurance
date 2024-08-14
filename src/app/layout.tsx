@@ -1,9 +1,9 @@
 'use client';
 
-import { Roboto } from "next/font/google";
+import { Roboto, Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const font = Roboto({
+const font = Work_Sans({
   subsets: ["latin"],
   weight: ["400", '700'],
 });

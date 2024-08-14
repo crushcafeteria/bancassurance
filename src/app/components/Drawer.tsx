@@ -41,8 +41,7 @@ export default function Drawer({ open, setOpen, menu }: any) {
                                     </div>
                                 </div>
                                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
-
-                                    {menu.map((item, idx) => (
+                                    {menu.map((item: any) => (
                                         <div className={`block border-l-4 border-transparent hover:border-l-banana p-4 -mt-0.5 cursor-pointer`} key={item.label}>
                                             <a
                                                 href={item.url}
